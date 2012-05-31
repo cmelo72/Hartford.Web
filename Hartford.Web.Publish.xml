@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="https://hartford.cloudnetworkz.com:8172/MsDeploy.axd" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="HartfordMaterials" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="True" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="HartfordMaterials" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="Administrator" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAfhZ98sM3ZkiovbOd1MoDyQAAAAACAAAAAAAQZgAAAAEAACAAAABWAH2Az9LaHmX63kYROiv26CL73yOY3GOqIWZodgo5GwAAAAAOgAAAAAIAACAAAADCrAKgj4m50/0IMueWvlaYg+mc3pnmTK+ej0U+Gccl4iAAAADOqkoOoX7sJYNbHlOtb2O+IhmCXjpgaWHbDpsaYJDyXkAAAACmAzlep7kGNsqHRRAjyLgj87RXMg4h9Zymn+DkFKmQxFN/97Yf1CT09heQzFZk6vgG/1keML820Wz/sTmthimX" SelectedForPublish="True" />
+</publishData>

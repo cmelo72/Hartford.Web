@@ -1,0 +1,7 @@
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\bin\Hartford.Web.dll
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\bin\Hartford.Web.pdb
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\bin\EntityFramework.dll
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\bin\EntityFramework.xml
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\obj\Debug\ResolveAssemblyReference.cache
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\obj\Debug\Hartford.Web.dll
+S:\Documents\CloudNetworkz\Projects\HartfordMaterials\Website\HartfordMaterials_Solution\Hartford.Web\Hartford.Web\obj\Debug\Hartford.Web.pdb

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>CultivContactForm.cshtml</guid>
+      <orgPath>/macroScripts</orgPath>
+      <orgName>CultivContactForm.cshtml</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Cultiv Razor Contact Form</name>
+      <version>1.0.1</version>
+      <license url="http://www.opensource.org/licenses/mit-license.php">MIT license</license>
+      <url>http://cultiv.nl</url>
+      <requirements>
+        <major>4</major>
+        <minor>7</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Sebastiaan Janssen</name>
+      <website>http://cultiv.nl</website>
+    </author>
+    <readme><![CDATA[A simple contact form, written in Razor. The Razor file is structured so that you can easily modify the existing fields or add new ones.
+
+Basic usage:
+
+To put the contact form on your template, add this Umbraco macro:
+<umbraco:Macro FileLocation="~/macroScripts/CultivContactForm.cshtml"            MailFrom="hi@test.com" runat="server" />
+
+This is the simplest way to start and add the form to your site. It will give you a full contact form with validation. The MailFrom parameter is required, this is the e-mail address that will appear in the “from” field of the e-mails that are being sent out.
+Additionally, you may add a parameter called MailFromName to specify the name that will be shown in the “from” field.
+
+There are many configurable elements for this package, for full documentation go to the Cultiv Razor Contact Form package page on our.umbraco.org and click on the "documentation" tab.
+The URL: http://our.umbraco.org/projects/website-utilities/cultiv-razor-contact-form]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+</umbPackage>
