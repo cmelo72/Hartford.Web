@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hartford.Web", "Hartford.Web\Hartford.Web.csproj", "{ED07EFF2-A378-410E-8775-E7A990B6DFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED07EFF2-A378-410E-8775-E7A990B6DFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED07EFF2-A378-410E-8775-E7A990B6DFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED07EFF2-A378-410E-8775-E7A990B6DFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED07EFF2-A378-410E-8775-E7A990B6DFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

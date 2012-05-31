@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<div id="main">
+		<img src="/Content/images/OldeTowneOysterBlend.jpg" alt="main image" class="main-img" />
+				<div class="two-columns">
+					<div class="col-1">
+						<div class="gallery">
+							<div id="wowslider-container1">
+								<div class="ws_images">
+									<span><img src="/Content/images/img01.jpg" alt="imgSlide-4" title="imgSlide-4" id="wows0"/></span>
+									<span><img src="/Content/images/img03.jpg" alt="imgSlide-3" title="imgSlide-3" id="wows1"/></span>
+									<span><img src="/Content/images/img06.jpg" alt="imgSlide-2" title="imgSlide-2" id="wows2"/></span>
+									<span><img src="/Content/images/img05.jpg" alt="imgSlide-1" title="imgSlide-1" id="wows3"/></span>
+								</div>
+								<div class="ws_bullets">
+									<div>
+										<a href="#wows0" title="imgSlide-1">1</a>
+										<a href="#wows1" title="imgSlide-2">2</a>
+										<a href="#wows2" title="imgSlide-3">3</a>
+										<a href="#wows3" title="imgSlide-4">4</a>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="frame">
+								<ul class="slideshow">
+									<li><a href="inner.html"><img src="images/img01.jpg" alt="gallrey image" width="496" height="196" /></a></li>
+									<li><a href="inner.html"><img src="images/img03.jpg" alt="gallrey image" width="496" height="196" /></a></li>
+									<li><a href="inner.html"><img src="images/img04.jpg" alt="gallrey image" width="496" height="196" /></a></li>
+									<li><a href="inner.html"><img src="images/img05.jpg" alt="gallrey image" width="496" height="196" /></a></li>
+								</ul>
+								<a href="inner.html" class="link-prev">prev</a>
+								<a href="inner.html" class="link-next">prev</a>
+							</div>
+							<ul class="switcher">
+								<li><a href="inner.html">switcher</a></li>
+								<li><a href="inner.html">switcher</a></li>
+								<li><a href="inner.html">switcher</a></li>
+								<li><a href="inner.html">switcher</a></li>
+							</ul> -->
+						</div>
+						<div class="box">
+							<div class="box-top">
+								<div class="inner-box">
+									<h2>About Us</h2>
+									<p>Hartford Materials is a subsidiary of Hartford Paving Corporation, easily located off Exit 5 from Rt.295 in Johnston, Rhode Island. Hartford Paving was founded in 1974 by my father, Anthony Corsinetti, Sr., as a general contractor paving driveways, parking lots and roadways.</p>
+									@Html.ActionLink("LEARN MORE", "About", "Home", null, new { @class = "learnmore" })
+                                </div>
+							</div>
+							<div class="box-btm">&nbsp;</div>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="mid">
+							<div class="top">
+								<div class="btm">
+									<h2>Decorative Stone Feature</h2>
+									<img src="/Content/images/side-img.jpg" alt="image" class="alignright" />
+									<h3>Landscape Stone</h3>
+									<p>Decorative Stone Solutions integrates years of industry experience with a product offering that is second to none, to establish the landscape professional's single-source stone supplier.</p>
+									@Html.ActionLink("LEARN MORE", "About", "Home", null, new { @class = "learnmore" }) </div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
