@@ -89,6 +89,10 @@
     <Content Include="Content\images\bg-red.png" />
     <Content Include="Content\images\bg-wrapper.gif" />
     <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\FinishedWork\brewed2.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed6.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed7.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed9.JPG" />
     <Content Include="Content\images\btm-arrow.png" />
     <Content Include="Content\images\bullet.png" />
     <Content Include="Content\images\Compact1.jpg" />
