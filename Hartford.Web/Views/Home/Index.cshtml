@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div id="main">
+<div id="main">      
 		<img src="/Content/images/OldeTowneOysterBlend.jpg" alt="main image" class="main-img" />
 				<div class="two-columns">
 					<div class="col-1">
@@ -21,23 +22,7 @@
 										<a href="#wows3" title="imgSlide-4">4</a>
 									</div>
 								</div>
-							</div>
-							<!-- <div class="frame">
-								<ul class="slideshow">
-									<li><a href="inner.html"><img src="images/img01.jpg" alt="gallrey image" width="496" height="196" /></a></li>
-									<li><a href="inner.html"><img src="images/img03.jpg" alt="gallrey image" width="496" height="196" /></a></li>
-									<li><a href="inner.html"><img src="images/img04.jpg" alt="gallrey image" width="496" height="196" /></a></li>
-									<li><a href="inner.html"><img src="images/img05.jpg" alt="gallrey image" width="496" height="196" /></a></li>
-								</ul>
-								<a href="inner.html" class="link-prev">prev</a>
-								<a href="inner.html" class="link-next">prev</a>
-							</div>
-							<ul class="switcher">
-								<li><a href="inner.html">switcher</a></li>
-								<li><a href="inner.html">switcher</a></li>
-								<li><a href="inner.html">switcher</a></li>
-								<li><a href="inner.html">switcher</a></li>
-							</ul> -->
+							</div>							
 						</div>
 						<div class="box">
 							<div class="box-top">
@@ -54,11 +39,12 @@
 						<div class="mid">
 							<div class="top">
 								<div class="btm">
-									<h2>Decorative Stone Feature</h2>
-									<img src="/Content/images/side-img.jpg" alt="image" class="alignright" />
-									<h3>Landscape Stone</h3>
-									<p>Decorative Stone Solutions integrates years of industry experience with a product offering that is second to none, to establish the landscape professional's single-source stone supplier.</p>
-									@Html.ActionLink("LEARN MORE", "About", "Home", null, new { @class = "learnmore" }) </div>
+									<h2>Exclusive Videos</h2>
+                                    <a href="http://www.youtube.com/watch?v=rwjNeE3pxj0" class="lb lb_youtube" title="Hartford Materials/Paving Videos"><img src="/Content/images/videostill.JPG" alt="image" class="alignright" /></a>
+                                    
+									<h3>TV Commercial</h3>
+									<p>Hartford Materials & Paving integrates years of industry experience with a product offering that is second to none. Watch exclusive videos of Hartford Materials & Paving.  Where we highlight all of our products and services.</p>
+									<a href="http://www.youtube.com/watch?v=rwjNeE3pxj0" class="learnmore lb">WATCH VIDEO</a> </div>
 							</div>
 						</div>
 					</div>
@@ -66,3 +52,42 @@
 		</div>
 	</div>
 </div>
+@section footerscript
+{
+    <script src="@Url.Content("~/widget/lib/jquery.ui.core.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/widget/lib/jquery.ui.widget.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/widget/lib/jquery.ui.rlightbox.min.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            var $chosenSheet,
+		$stylesheets = $("a[id^=theme-]");
+
+            // theme switcher
+            $stylesheets.click(
+		function () {
+		    $chosenSheet = $(this).attr("href");
+		    $("#theme").attr("href", $chosenSheet);
+
+		    // mark this A as an active
+		    $stylesheets.removeClass("active");
+		    $(this).addClass("active");
+		    return false;
+		}
+	    );
+
+            // run rlightbox
+            $(".lb").rlightbox();
+            $(".lb_title-overwritten").rlightbox({ overwriteTitle: true });
+        });
+    </script>    
+
+}
+
+@section css
+{
+
+    <link href="@Url.Content("~/widget/css/ui-lightness/jquery-ui-1.8.16.custom.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/widget/css/lightbox.min.css")" rel="stylesheet" type="text/css" />
+
+}
+
