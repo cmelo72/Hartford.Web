@@ -27,6 +27,18 @@ namespace Hartford.Web.Controllers
         {
             return View();
         }
+        public ActionResult Utility()
+        {
+            return View();
+        }
+        public ActionResult ContractWork()
+        {
+            return View();
+        }
+        public ActionResult FineGrade()
+        {
+            return View();
+        }
 
     }
 }
