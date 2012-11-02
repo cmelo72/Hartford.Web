@@ -34,11 +34,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Castle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\HartfordMaterials.v2\CMS\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -112,6 +119,7 @@
     <Content Include="Content\images\brewed_featured.jpg" />
     <Content Include="Content\images\ContractWork.jpg" />
     <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\FineGrade.jpg" />
     <Content Include="Content\images\FineGrade1.jpg" />
     <Content Include="Content\images\FinishedWork\brewed10.JPG" />
     <Content Include="Content\images\FinishedWork\brewed2.JPG" />
