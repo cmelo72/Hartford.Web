@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hartford Materials & Paving - @ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/css/all.css")" rel="stylesheet" type="text/css" />
+    @RenderSection("css", false)   
+    <!--[if lt IE 8]><link href="@Url.Content("~/Content/css/ie.css")" media="screen"/><![endif]-->
+    <link href="@Url.Content("~/Content/images/favicon.ico")" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<div id="wrapper">
+	<div class="w1">
+		<div id="header">
+			<div class="holder">
+				<h1 class="logo">@Html.ActionLink("Hartford Paving", "Index", "Paving")</h1>
+				<strong class="logo-1">@Html.ActionLink("Hartford Materials", "Index", "Home")</strong>
+				<div class="header-right">
+					<ul class="contact">
+                        <li>@Html.ActionLink("Hartford Materials", "Index", "Home")</li>
+						<li>@Html.ActionLink("Contact Us", "ContactUs", "Paving")</li>
+						<li>@Html.ActionLink("Directions", "Directions", "Home")</li>
+					</ul>
+					<ul id="nav">
+						<li><a href="/Paving/PavingServices"><span>Services</span></a></li>						
+						<li><a href="/Paving/FinishedPaving"><span>Finished Work</span></a></li>						                      
+					</ul>
+				</div>
+			</div>
+		</div>       
+            @RenderBody()     
+        <div id="footer">
+	<div class="holder">
+		<div class="footer-left">
+	        <address>
+	            <span class="road">
+	                <a title="Hartford Paving Corporation BBB Business Review" href="http://www.bbb.org/boston/business-reviews/paving-contractors/hartford-paving-corporation-in-johnston-ri-106543/#bbbonlineclick" target="_blank"><img alt="Hartford Paving Corporation BBB Business Review" style="border: 0;" src="http://seal-boston.bbb.org/seals/blue-seal-200-42-hartford-paving-corporation-106543.png" /></a>
+	            </span>
+	            <span>112 Old Pocasset Road</span><span>Johnston, RI 02919</span><span>Phone: 401.942.8857</span><span>Fax: 401.946.4144</span>
+	        </address>
+	        <span class="copyright">© @(System.DateTime.Now.Year) Hartford Materials. All Rights Reserved.</span>
+	    </div>
+		@*<div class="social-network"> <span class="follow-us">Follow Us</span>
+			<ul>
+				<li><a href="#" class="twitter">twitter</a></li>
+				<li><a href="#" class="youtube">you tube</a></li>
+				<li><a href="#" class="facebook">facebook</a></li>
+			</ul>
+		</div>*@
+	</div>
+</div>
+</div>
+    </div>
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.main.js")" type="text/javascript"></script>
+    @RenderSection("footerscript", false)
+   </body>
+</html>
+

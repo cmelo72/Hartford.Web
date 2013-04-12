@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED07EFF2-A378-410E-8775-E7A990B6DFCF}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hartford.Web</RootNamespace>
+    <AssemblyName>Hartford.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\HartfordMaterials.v2\CMS\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PavingController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\all.css" />
+    <Content Include="Content\css\ie.css" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Content\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Content\css\ui-lightness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Content\images\address-saprator.gif" />
+    <Content Include="Content\images\arrows.png" />
+    <Content Include="Content\images\bg-col-2-btm.png" />
+    <Content Include="Content\images\bg-col-2-mid.png" />
+    <Content Include="Content\images\bg-col-2-top.png" />
+    <Content Include="Content\images\bg-footer.png" />
+    <Content Include="Content\images\bg-gallery.gif" />
+    <Content Include="Content\images\bg-header-holder.png" />
+    <Content Include="Content\images\bg-header.gif" />
+    <Content Include="Content\images\bg-iner-content.png" />
+    <Content Include="Content\images\bg-information.png" />
+    <Content Include="Content\images\bg-learnmore.png" />
+    <Content Include="Content\images\bg-red-btm.png" />
+    <Content Include="Content\images\bg-red.png" />
+    <Content Include="Content\images\bg-wrapper.gif" />
+    <Content Include="Content\images\bg.png" />
+    <Content Include="Content\images\brewed10.jpg" />
+    <Content Include="Content\images\brewed2.jpg" />
+    <Content Include="Content\images\brewed3.jpg" />
+    <Content Include="Content\images\brewed6.JPG" />
+    <Content Include="Content\images\brewed_featured.jpg" />
+    <Content Include="Content\images\ContractWork.jpg" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\FineGrade.jpg" />
+    <Content Include="Content\images\FineGrade1.jpg" />
+    <Content Include="Content\images\FinishedWork\brewed10.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed2.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed6.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed7.JPG" />
+    <Content Include="Content\images\FinishedWork\brewed9.JPG" />
+    <Content Include="Content\images\btm-arrow.png" />
+    <Content Include="Content\images\bullet.png" />
+    <Content Include="Content\images\Compact1.jpg" />
+    <Content Include="Content\images\Compact2.jpg" />
+    <Content Include="Content\images\Compact3.png" />
+    <Content Include="Content\images\Compact4.jpg" />
+    <Content Include="Content\images\content-btm.gif" />
+    <Content Include="Content\images\content-mid.gif" />
+    <Content Include="Content\images\content-top.gif" />
+    <Content Include="Content\images\Earth2.jpg" />
+    <Content Include="Content\images\Earth3.png" />
+    <Content Include="Content\images\EquipmentRental.jpg" />
+    <Content Include="Content\images\FinishedWork\Adirondack Granite Mosaic.jpg" />
+    <Content Include="Content\images\FinishedWork\Antiqued Col Cob Adobe Blend. Crab Orchard Circle. %284%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Antiqued Col Cob Adobe Blend. Crab Orchard Circle. %286%29.jpg" />
+    <Content Include="Content\images\FinishedWork\antiquewhite.jpg" />
+    <Content Include="Content\images\FinishedWork\ants house 004.jpg" />
+    <Content Include="Content\images\FinishedWork\Baluster 001.jpg" />
+    <Content Include="Content\images\FinishedWork\Baluster 002.jpg" />
+    <Content Include="Content\images\FinishedWork\Barrington PA Fieldstone 2.jpg" />
+    <Content Include="Content\images\FinishedWork\Barrington PA Fieldstone.jpg" />
+    <Content Include="Content\images\FinishedWork\bgb.png" />
+    <Content Include="Content\images\FinishedWork\bl.jpg" />
+    <Content Include="Content\images\FinishedWork\Bluestone radius treads. Rockfaced %281%29.JPG" />
+    <Content Include="Content\images\FinishedWork\candycane2.jpg" />
+    <Content Include="Content\images\FinishedWork\Casale Olde Towne Oyster, Dolph Pond Granite %281%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Casale Olde Towne Oyster, Dolph Pond Granite %282%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Casale Olde Towne Oyster, Dolph Pond Granite %2829%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Catawba DryStack_42.jpg" />
+    <Content Include="Content\images\FinishedWork\CIMG0032.JPG" />
+    <Content Include="Content\images\FinishedWork\CIMG0034.JPG" />
+    <Content Include="Content\images\FinishedWork\Col Cob Bayberry %285%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Colonial Wall Oyster Blend.JPG" />
+    <Content Include="Content\images\FinishedWork\Copy of buttonwoods 009.jpg" />
+    <Content Include="Content\images\FinishedWork\DP,BM,HT Granite, Quartz mix %2817%29.jpg" />
+    <Content Include="Content\images\FinishedWork\DP,BM,HT Granite, Quartz mix %2818%29.jpg" />
+    <Content Include="Content\images\FinishedWork\DSCF7081.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7082.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7083.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7084.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7085.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7086.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7087.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7088.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7089.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7090.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7091.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7092.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7093.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7094.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7095.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7095b.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7096.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7096b.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7097.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7097b.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7098.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7099.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7099b.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7100.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7100b.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7101.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7101b.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7102.JPG" />
+    <Content Include="Content\images\FinishedWork\DSCF7103.JPG" />
+    <Content Include="Content\images\FinishedWork\equipment 001.jpg" />
+    <Content Include="Content\images\FinishedWork\Full color Nat. Cleft Bluestone %285%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Heritage Stone - Alleghany Limestone - 1.JPG" />
+    <Content Include="Content\images\FinishedWork\Heritage Stone - Santee Ledge - 1.JPG" />
+    <Content Include="Content\images\FinishedWork\Heritage Stone - Santee Ledge 2.JPG" />
+    <Content Include="Content\images\FinishedWork\hm 006.jpg" />
+    <Content Include="Content\images\FinishedWork\Hollanstone Harvest Gold %284%29.jpg" />
+    <Content Include="Content\images\FinishedWork\HPIM0366.JPG" />
+    <Content Include="Content\images\FinishedWork\HPIM1287.JPG" />
+    <Content Include="Content\images\FinishedWork\HPIM2561.JPG" />
+    <Content Include="Content\images\FinishedWork\Huron DryStack_01.jpg" />
+    <Content Include="Content\images\FinishedWork\jobs 002.jpg" />
+    <Content Include="Content\images\FinishedWork\jobs 003.jpg" />
+    <Content Include="Content\images\FinishedWork\Jobs 017.jpg" />
+    <Content Include="Content\images\FinishedWork\june 046.jpg" />
+    <Content Include="Content\images\FinishedWork\Lou Polseno 028.jpg" />
+    <Content Include="Content\images\FinishedWork\NE FIELD %2811%29.jpg" />
+    <Content Include="Content\images\FinishedWork\NE Fieldstone and Ledgestone %284%29.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 006.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 029.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 075.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 079.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 098.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 114.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 124.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 127.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock 133.jpg" />
+    <Content Include="Content\images\FinishedWork\nicolock logo-top.gif" />
+    <Content Include="Content\images\FinishedWork\nicolock punch-line.gif" />
+    <Content Include="Content\images\FinishedWork\Olde Towne Oyster Blend %287%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Olde Towne Oyster Blend %288%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Olde Towne Paver Granite City.jpg" />
+    <Content Include="Content\images\FinishedWork\PA Fielstone.jpg" />
+    <Content Include="Content\images\FinishedWork\Pavers 009.jpg" />
+    <Content Include="Content\images\FinishedWork\Provinciale Paver Limestone 2.jpg" />
+    <Content Include="Content\images\FinishedWork\Provinciale Paver Limestone.jpg" />
+    <Content Include="Content\images\FinishedWork\pw.jpg" />
+    <Content Include="Content\images\FinishedWork\Quartzite Thin Veneer %285%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Riverstone %286%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Rustico 6x9, Circle Autumn Blend.JPG" />
+    <Content Include="Content\images\FinishedWork\RusticRed34.jpg" />
+    <Content Include="Content\images\FinishedWork\Santee LedgeStone w Shenandoah FS Trim.jpg" />
+    <Content Include="Content\images\FinishedWork\Seneca DryStack_16.jpg" />
+    <Content Include="Content\images\FinishedWork\sm.jpg" />
+    <Content Include="Content\images\FinishedWork\Snappped Blue Edge 2.JPG" />
+    <Content Include="Content\images\FinishedWork\Snappped Blue Edge.JPG" />
+    <Content Include="Content\images\FinishedWork\sunrise.jpg" />
+    <Content Include="Content\images\FinishedWork\Tumb Col Cob, Circle Adobe.jpg" />
+    <Content Include="Content\images\FinishedWork\Tumbled Col. Cobble Granite City %289%29.jpg" />
+    <Content Include="Content\images\FinishedWork\Tumbled Colonial Cobble Circle in Adobe Blend.jpg" />
+    <Content Include="Content\images\FinishedWork\Tumbled Colonial Cobble Granite City.jpg" />
+    <Content Include="Content\images\FinishedWork\Tumbled Tuscany Wall 2.jpg" />
+    <Content Include="Content\images\FinishedWork\Tumbled Tuscany Wall Adobe.jpg" />
+    <Content Include="Content\images\FinishedWork\untitled.bmp" />
+    <Content Include="Content\images\FinishedWork\Wayside 006.jpg" />
+    <Content Include="Content\images\FinishedWork\Wayside 021.jpg" />
+    <Content Include="Content\images\FinishedWork\West Mountain %281%29.jpg" />
+    <Content Include="Content\images\FinishedWork\West Mountain %282%29.jpg" />
+    <Content Include="Content\images\FinishedWork\White Mountain %282%29.jpg" />
+    <Content Include="Content\images\FinishedWork\winika 011.jpg" />
+    <Content Include="Content\images\FinishedWork\wsdl 063.jpg" />
+    <Content Include="Content\images\FinishedWork\x 004.jpg" />
+    <Content Include="Content\images\FinishedWork\x 006.jpg" />
+    <Content Include="Content\images\FinishedWork\yard 001.jpg" />
+    <Content Include="Content\images\FinishedWork\yellowbeach.jpg" />
+    <Content Include="Content\images\hover.png" />
+    <Content Include="Content\images\img-2.jpg" />
+    <Content Include="Content\images\img01.jpg" />
+    <Content Include="Content\images\img03.jpg" />
+    <Content Include="Content\images\img04.jpg" />
+    <Content Include="Content\images\img05.jpg" />
+    <Content Include="Content\images\img06.jpg" />
+    <Content Include="Content\images\Lawn1.jpg" />
+    <Content Include="Content\images\logo-1.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\main-img.jpg" />
+    <Content Include="Content\images\Masonry2.jpg" />
+    <Content Include="Content\images\Masonry3.png" />
+    <Content Include="Content\images\Masonry4.png" />
+    <Content Include="Content\images\Masonry5.png" />
+    <Content Include="Content\images\NationalGrid1.jpg" />
+    <Content Include="Content\images\nicolock_newlogo2wide.jpg" />
+    <Content Include="Content\images\OldeTowneOysterBlend.jpg" />
+    <Content Include="Content\images\PavingProducts\Blue Ridge Pennsylvania Blue Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Bluestone Full color Natural Cleft.jpg" />
+    <Content Include="Content\images\PavingProducts\Bluestone Fullcolor Natural Cleft.jpg" />
+    <Content Include="Content\images\PavingProducts\Bluestone radius treads. Rockfaced %281%29.JPG" />
+    <Content Include="Content\images\PavingProducts\Bluestone Thermal.jpg" />
+    <Content Include="Content\images\PavingProducts\Bluestone Treads.jpg" />
+    <Content Include="Content\images\PavingProducts\Brownstone.jpg" />
+    <Content Include="Content\images\PavingProducts\Circle Pack Adobe Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Cobblestone.jpg" />
+    <Content Include="Content\images\PavingProducts\Colonial Cobble 4 pc Adobe Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Colonial Wall Oyster Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Colonial Wallstone.JPG" />
+    <Content Include="Content\images\PavingProducts\Conn. Tan Wallstone.jpg" />
+    <Content Include="Content\images\PavingProducts\Firma Jr. Granite City.jpg" />
+    <Content Include="Content\images\PavingProducts\Firma Wall Crab Orchard.jpg" />
+    <Content Include="Content\images\PavingProducts\Granite Steps.jpg" />
+    <Content Include="Content\images\PavingProducts\Heritage Manufactured Veneer.JPG" />
+    <Content Include="Content\images\PavingProducts\Heritage Stone - Alleghany Limestone - 1.JPG" />
+    <Content Include="Content\images\PavingProducts\Heritage Stone - Santee Ledge - 1.JPG" />
+    <Content Include="Content\images\PavingProducts\Hollandstone Golden Brown.jpg" />
+    <Content Include="Content\images\PavingProducts\Mini-Colonial Oyster Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\NE Fieldstone and Ledgestone %284%29.jpg" />
+    <Content Include="Content\images\PavingProducts\Olde Towne Oyster Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\PA Fieldstone.jpg" />
+    <Content Include="Content\images\PavingProducts\PA Fielstone.jpg" />
+    <Content Include="Content\images\PavingProducts\Provinciale Limestone.jpg" />
+    <Content Include="Content\images\PavingProducts\Rustico 12x12 Golden Brown.JPG" />
+    <Content Include="Content\images\PavingProducts\Rustico 6x9, 6x6 Crab Orchard.jpg" />
+    <Content Include="Content\images\PavingProducts\Serafina Wall Fire Island Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Sierra Adobe Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Stone Ridge Oyster Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\ThinveneerGranite2.jpg" />
+    <Content Include="Content\images\PavingProducts\Thin Veneer Granite.jpg" />
+    <Content Include="Content\images\PavingProducts\Thin Veneer Quartzite.jpg" />
+    <Content Include="Content\images\PavingProducts\Travertine-FeaturesFinish.jpg" />
+    <Content Include="Content\images\PavingProducts\Travertine2.JPG" />
+    <Content Include="Content\images\PavingProducts\Travertine3.JPG" />
+    <Content Include="Content\images\PavingProducts\Travertine4.JPG" />
+    <Content Include="Content\images\PavingProducts\Travertine.JPG" />
+    <Content Include="Content\images\PavingProducts\Tumbled Country 4pc Combo Bayberry Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\Tumbled Village Bayberry Blend.jpg" />
+    <Content Include="Content\images\PavingProducts\West Mountain %282%29.jpg" />
+    <Content Include="Content\images\PavingProducts\West Mountain Wallstone.jpg" />
+    <Content Include="Content\images\PavingTruck.jpg" />
+    <Content Include="Content\images\PumpPowerPressure.jpg" />
+    <Content Include="Content\images\Sakai.jpg" />
+    <Content Include="Content\images\seprater.gif" />
+    <Content Include="Content\images\seprator-1.gif" />
+    <Content Include="Content\images\side-arrow.png" />
+    <Content Include="Content\images\side-img.jpg" />
+    <Content Include="Content\images\sidebar-btm.gif" />
+    <Content Include="Content\images\sidebar-img.jpg" />
+    <Content Include="Content\images\sidebar-mid.gif" />
+    <Content Include="Content\images\sidebar-top.gif" />
+    <Content Include="Content\images\socail-icon.png" />
+    <Content Include="Content\images\transparent.png" />
+    <Content Include="Content\images\Truck2012.jpg" />
+    <Content Include="Content\images\videostill.JPG" />
+    <Content Include="Content\media\HartfordMaterials.flv" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\GalleryView\CHANGELOG.txt" />
+    <Content Include="Content\themes\GalleryView\css\img-loader.gif" />
+    <Content Include="Content\themes\GalleryView\css\jquery.galleryview-3.0-dev.css" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\next.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\panel-next-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\panel-next.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\panel-prev-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\panel-prev.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\pause-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\pause.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\play-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\play.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\dark\prev.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\info.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\next.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\panel-next-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\panel-next.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\panel-prev-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\panel-prev.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\pause-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\pause.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\play-big.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\play.png" />
+    <Content Include="Content\themes\GalleryView\css\themes\light\prev.png" />
+    <Content Include="Content\themes\GalleryView\demos\all-features.html" />
+    <Content Include="Content\themes\GalleryView\demos\default.html" />
+    <Content Include="Content\themes\GalleryView\js\jquery.easing.1.3.js" />
+    <Content Include="Content\themes\GalleryView\js\jquery.galleryview-3.0-dev.js" />
+    <Content Include="Content\themes\GalleryView\js\jquery.timers-1.2.js" />
+    <Content Include="Content\themes\GalleryView\LICENSE.txt" />
+    <Content Include="Content\themes\GalleryView\README.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\galleria.classic.js" />
+    <Content Include="Scripts\galleria.classic.min.js" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-1.6.4.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.backstretch.js" />
+    <Content Include="Scripts\jquery.main.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery.ui.rlightbox.js" />
+    <Content Include="Scripts\jquery.ui.rlightbox.min.js" />
+    <Content Include="Scripts\jquery.ui.widget.js" />
+    <Content Include="Scripts\jquery.ui.widget.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Views\Shared\package.xml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="widget\css\error_bg.png" />
+    <Content Include="widget\css\error_sign.png" />
+    <Content Include="widget\css\lightbox.css" />
+    <Content Include="widget\css\lightbox.min.css" />
+    <Content Include="widget\css\loader.gif" />
+    <Content Include="widget\css\panorama.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="widget\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="widget\css\ui-lightness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="widget\lib\jquery-1.6.4.js" />
+    <Content Include="widget\lib\jquery-1.6.4.min.js" />
+    <Content Include="widget\lib\jquery.ui.core.js" />
+    <Content Include="widget\lib\jquery.ui.core.min.js" />
+    <Content Include="widget\lib\jquery.ui.rlightbox.js" />
+    <Content Include="widget\lib\jquery.ui.rlightbox.min.js" />
+    <Content Include="widget\lib\jquery.ui.widget.js" />
+    <Content Include="widget\lib\jquery.ui.widget.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout-Inner.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ContactUs.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Equipment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PavingProducts.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Directions.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout-Inner-Equipment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\EquipmentPump.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\EquipmentCompaction.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\EquipmentEarth.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\EquipmentMasonry.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\EquipmentLawn.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout-Inner-Finished.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Finished.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout-Inner-Paving.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversBlueRidgePenn.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversColonialCob.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversHollandstone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversOldeTonneOyster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversProvincialsLimestone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversRustico.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversStoneRidgeOyster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversTumbledCountry.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversTumbledVillageBayberry.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\PaversCirclePacks.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsAlta.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsColonialOyster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemFirmaCrabOrchard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsFirmaCrabOrchard.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsFirmaJR.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsMiniColonialOyster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsSerafinaFireIsland.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsSierraAdobeblend.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallSystemsTrinity.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ManufacturedHeritageStone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ThinVeneer.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\BluestoneFullColor.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\BluestoneBlueThermal.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\BluestoneRadius.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallstoneColonial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallstonePA.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallstoneWestMountain.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallstoneWestMountainWallstone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\WallstoneConnTanWallstone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\OtherTravertine.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\OtherGraniteSteps.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\OtherBrownstone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\OtherCobblestone.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout-Inner-Services.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutPaving.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\AboutPaving.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\PavingServices.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\_PavingFeature.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\FinishedPaving.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_Layout-Inner-Paving-Finished.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\Utility.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\ContractWork.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\_PavingSubMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\FineGrade.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Paving\ContactUs.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\DEV Hartford.pubxml" />
+    <None Include="Properties\PublishProfiles\hartford - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\hartford - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\HartfordMaterials.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57942</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
