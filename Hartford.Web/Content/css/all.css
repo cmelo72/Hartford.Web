@@ -52,7 +52,7 @@ form, fieldset {
 	width:923px;
 	margin:0 auto;
 	overflow:hidden;
-	padding:9px 0 3px 17px;
+	padding:9px 0 48px 17px;
 	background: url(../images/bg-header-holder.png) no-repeat left top;
 }
 .logo {
@@ -154,8 +154,8 @@ ul#nav li a:hover span, ul#nav li.active a span {
 #main {
 	width:940px;
 	margin:0 auto;
-	top:-52px;
-	padding:52px 20px 0 20px;
+	top:-97px;
+	padding:69px 23px 0 18px;
 	position:relative;
 }
 .main-img {

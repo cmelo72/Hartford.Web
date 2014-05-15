@@ -34,6 +34,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabases>false</PublishDatabases>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -671,10 +672,8 @@
     <Content Include="Views\Paving\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\PublishProfiles\DEV Hartford.pubxml" />
     <None Include="Properties\PublishProfiles\hartford - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\hartford - Web Deploy.pubxml" />
-    <None Include="Properties\PublishProfiles\HartfordMaterials.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
